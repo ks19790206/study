@@ -7,6 +7,7 @@ enable :sessions
 
 class Datas < ActiveRecord::Base
   validates_presence_of :name
+  validates_presence_of :email
 end
 
 get '/' do
@@ -25,7 +26,8 @@ post '/datas' do
 
 #p params
 name = params[:name]
-@data = Datas.new({name: name})
+email =params[:email]
+@data = Datas.new({name: name,email: email})
   if @data.save
     session[:message] = "#{name}さんを作成しました"
    redirect '/'
