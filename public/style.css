@@ -1,6 +1,15 @@
-.adress{
-  color:red;
+#tabbody div {
+   border: 1px solid black;
+   margin-top: -1px;
+   padding: 5em;
+   background-color: white;
+   position: relative;
+   z-index: 0;
 }
+
+#tabcontrol a:nth-child(1), #tabbody div:nth-child(1) { background-color: #ffffdd; }
+#tabcontrol a:nth-child(2), #tabbody div:nth-child(2) { background-color: #ddffdd; }
+#tabcontrol a:nth-child(3), #tabbody div:nth-child(3) { background-color: #ddddff; }
 
 .message{
   color:blue;

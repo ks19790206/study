@@ -1,20 +1,47 @@
 <html>
- <hesd>
-   <meta charset="UTF-8">
-   <title>トップページ</title>
-   <link rel="stylesheet" href="style.css">
+ <head>
+    <meta charset="UTF-8">
+    <title>トップページ</title>
+    <link rel="stylesheet" href="style.css">
  </head>
  <body>
-   <div class="container">
-    <footer>
-     <a href="adress.html">会社所在地</a>
-    </footer>
-    <div>
-     <a href="/form_new">社員新規登録</a>
-    </div>
-    <div>
-     <a href="/staff_all">社員一覧</a>
-    </div>
+  <div class="container">
+　 <h1>従業員登録アプリ</h1>
+   <div id="tabbody">
+    <div id="tabpage1"><a href="/form_new">従業員登録</a></div>
+    <div id="tabpage2"><a href="/staff_all">従業員一覧</a></div>
+    <div id="tabpage3"><a href="adress.html">お問い合わせ先</a></div>
+   </div>
+   <script type="text/javascript">
+
+     var tabs = document.getElementById('tabcontrol').getElementsByTagName('a');
+     var pages = document.getElementById('tabbody').getElementsByTagName('div');
+
+   function changeTab() {
+     var targetid = this.href.substring(this.href.indexOf('#')+1,this.href.length);
+
+    for(var i=0; i<tabs.length; i++) {
+       tabs[i].style.zIndex = "0";
+    }
+    this.style.zIndex = "10";
+
+
+    return false;
+   }
+
+
+   for(var i=0; i<tabs.length; i++) {
+      tabs[i].onclick = changeTab;
+   }
+
+
+   tabs[0].onclick();
+
+   </script>
+   <ul>
+     <li>従業員登録は従業員登録タブより入力して下さい</li>
+     <li>お問い合わせはお問い合わせタブから参照して下さい</li>
+   </ul>
   </div>
  </body>
 </html>
