@@ -7,11 +7,16 @@
  <body>
   <div class="container">
 　 <h1>従業員登録アプリ</h1>
+     <% if @message %>
+      <div class="message"><%= @message %></div>
+     <% end %>
+
 　　<p id="tabcontrol">
  　　<a href="#tabpage1">従業員新規登録</a>
  　　<a href="#tabpage2">従業員一覧</a>
  　　<a href="#tabpage3">お問い合わせ先</a>
 　　</p>
+
    <div id="tabbody">
     <div id="tabpage1"><a href="/form_new">従業員登録</a></div>
     <div id="tabpage2"><a href="/staff_all">従業員一覧</a></div>
