@@ -13,10 +13,14 @@ class Datas < ActiveRecord::Base
 end
 
 get '/' do
+  erb :index
+end
+
+get '/staff_all' do
   @now=Time.now
   @data=Datas.all
   @message=session.delete :message
-  erb :index
+ erb :staff_all
 end
 
 get '/form_new' do
