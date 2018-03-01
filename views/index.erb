@@ -1,0 +1,29 @@
+<html>
+ <hesd>
+   <meta charset="UTF-8">
+   <title>社員表</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <h1>社員一覧</h1>
+   <p><%= @now %></p>
+   <% if @message %>
+    <div class="message"><%= @message %></div>
+   <% end %>
+  <footer>
+   <a href="adress.html">会社所在地</a>
+  </footer>
+  <div>
+   <a href="/form_new">新入社員新規登録</a>
+  </div>
+  <thead></thead>
+  <tbody>
+   <% @data.each do |data| %>
+    <tr>
+     <td><%= data.id %></td>
+     <td><%= data.name %></td>
+    </tr>
+   <% end %>
+  </tbody>
+ </body>
+</html>

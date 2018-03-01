@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>新入社員の連絡先<h1>
+   <% if @data.errors.present? %>
+   入力エラーがあります。
+   <ul>
+    <% @data.errors.full_messages.each do |message| %>
+     <li><%= message %></li>
+    <% end %>
+   </ul>
+   <% end %>
+  <form action="datas" method="post">
+    <input type ="text" name="name">
+    <input type ="submit">
+  </form>
+  <div>
+    <a href="/">戻る</a>
+  </div>
+</body>
+</html>
