@@ -5,3 +5,8 @@
 .message{
   color:blue;
 }
+
+.container{
+  width: 960px;
+  margin: auto;
+}

@@ -14,10 +14,22 @@
    </ul>
    <% end %>
   <form action="datas" method="post">
-    <input type ="text" name="name">
-    <input type ="text" name="email">
-    <input type ="text" name="adress">
-    <input type ="text" name="tel">
+    <div>
+      <label for ="data_name">名前</label>
+      <input type ="text" name="name" id="data_name">
+    </div>
+    <div>
+      <label for ="data_email">Email</label>
+      <input type ="text" name="email" id="data_email">
+    </div>
+    <div>
+      <label for ="data_adress">住所</label>
+      <input type ="text" name="adress" id="data_adress">
+    </div>
+    <div>
+      <label for ="data_tel">電話番号</label>
+      <input type ="text" name="tel" id="data_tel">
+    </div>
     <input type ="submit">
   </form>
   <div>
