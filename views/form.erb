@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>新入社員の連絡先<h1>
+ <div class="container">
+  <h1>新入社員の連絡先<h1>
    <% if @data.errors.present? %>
    入力エラーがあります。
    <ul>
@@ -35,5 +36,6 @@
   <div>
     <a href="/">トップページへ</a>
   </div>
+ </div>
 </body>
 </html>
