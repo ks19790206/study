@@ -33,7 +33,7 @@ for(var i=0; i<pages.length; i++) {
 #tabbody div {
    border: 1px solid black;
    margin-top: -1px;
-   padding: 5em;
+   padding: 9em;
    background-color: white;
    position: relative;
    z-index: 0;
@@ -50,4 +50,12 @@ for(var i=0; i<pages.length; i++) {
 .container{
   width: 960px;
   margin: auto;
+}
+
+.title{
+  color:red;
+}
+
+.contents{
+  color:blue;
 }

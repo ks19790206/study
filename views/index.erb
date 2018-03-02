@@ -6,7 +6,9 @@
  </head>
  <body class="bodystyle">
   <div class="container">
+  <div class="title">
 　 <h1>従業員登録アプリ</h1>
+  </div>
      <% if @message %>
       <div class="message"><%= @message %></div>
      <% end %>
@@ -57,10 +59,12 @@
    tabs[0].onclick();
 
    </script>
-   <ul>
-     <li>従業員登録は従業員登録タブより入力して下さい</li>
-     <li>お問い合わせはお問い合わせタブから参照して下さい</li>
-   </ul>
+   <div class="contents">
+    <ul>
+      <li>従業員登録は従業員登録タブより入力して下さい</li>
+      <li>お問い合わせはお問い合わせタブから参照して下さい</li>
+    </ul>
+   </div>
   </div>
  </body>
 </html>
