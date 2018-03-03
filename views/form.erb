@@ -21,15 +21,15 @@
     </div>
     <div>
       <label for ="data_email">Email</label>
-      <input type ="text" name="email" value="<%= params[:email] %>" id="data_email">
+      <input type ="text" name="email" value="<%= @data.email %>" id="data_email">
     </div>
     <div>
       <label for ="data_adress">住所</label>
-      <input type ="text" name="adress" value="<%= params[:adress] %>" id="data_adress">
+      <input type ="text" name="adress" value="<%= @data.adress %>" id="data_adress">
     </div>
     <div>
       <label for ="data_tel">電話番号</label>
-      <input type ="text" name="tel" value="<%= params[:tel] %>" id="data_tel">
+      <input type ="text" name="tel" value="<%= @data.tel %>" id="data_tel">
     </div>
     <input type ="submit">
   </form>
