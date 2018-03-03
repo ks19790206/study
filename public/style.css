@@ -3,15 +3,6 @@
   background-size: cover;
 }
 
-for(var i=0; i<pages.length; i++) {
-   if( pages[i].id != targetid ) {
-      pages[i].style.display = "none";
-   }
-   else {
-      pages[i].style.display = "block";
-   }
-}
-
 #tabcontrol a {
  display: inline-block;
  border-width: 1px 1px 0px 1px;

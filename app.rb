@@ -13,7 +13,7 @@ class Datas < ActiveRecord::Base
 end
 
 get '/' do
-  @message=session.delete :message
+  @message = session.delete :message
   erb :index
 end
 
